@@ -23,15 +23,15 @@ function changeColor(e) {
     this.classList.add('cell-yellow');
 }
 
-createCell(1024);
+createCell(784);
 
 resetButton.addEventListener('click', function(){
-    createCell(1024)
+    createCell(784)
     const cells = document.querySelectorAll('.grid div');
     cells.forEach(cell => cell.classList.add('cell'))
 });
 set32.addEventListener('click', function(){
-    createCell(256)
+    createCell(196)
     const cells = document.querySelectorAll('.grid div');
     cells.forEach(cell => cell.classList.add('cell-32'))
 });
