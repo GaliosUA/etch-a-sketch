@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    height: 100%;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -7,11 +8,13 @@ html {
 body {
     background-image: url(./images/bg.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    height: 100%;
+    margin: 0px;
 }
 
 button {
