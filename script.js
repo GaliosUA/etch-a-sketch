@@ -23,14 +23,22 @@ function changeColor(e) {
     this.classList.add('cell-yellow');
 }
 
-function logText() {
-    createCell(1024);
-}
-
 createCell(1024);
 
-resetButton.addEventListener('click', logText);
-set32.addEventListener('click', logText);
-set64.addEventListener('click', logText);
+resetButton.addEventListener('click', function(){
+    createCell(1024)
+    const cells = document.querySelectorAll('.grid div');
+    cells.forEach(cell => cell.classList.add('cell'))
+});
+set32.addEventListener('click', function(){
+    createCell(256)
+    const cells = document.querySelectorAll('.grid div');
+    cells.forEach(cell => cell.classList.add('cell-32'))
+});
+set64.addEventListener('click', function(){
+    createCell(64)
+    const cells = document.querySelectorAll('.grid div');
+    cells.forEach(cell => cell.classList.add('cell-64'))
+});
 
 
