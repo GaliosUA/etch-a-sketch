@@ -1,7 +1,10 @@
 const grid = document.querySelector('.grid');
-const resetButton = document.querySelector('.reset');
-const set32 = document.querySelector('.cell-32');
-const set64 = document.querySelector('.cell-64');
+const resetButton = document.querySelector('.small');
+const set32 = document.querySelector('.mid');
+const set64 = document.querySelector('.big');
+const colorRed = document.querySelector('.red');
+const colorYellow = document.querySelector('.yellow');
+const colorBlue = document.querySelector('.blue');
 
 function createCell (number) {
     if (grid.childNodes.length != 0) {
@@ -19,8 +22,8 @@ function createCell (number) {
 }
 
 
-function changeColor(e) {
-    this.classList.add('cell-yellow');
+function changeColor() {
+    this.classList.add('cell-red');
 }
 
 createCell(784);

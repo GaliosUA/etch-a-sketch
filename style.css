@@ -11,10 +11,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 button {
+    width: 64px;
     padding: 4px;
+    margin-bottom: 12px;
     min-width: min-content;
 }
 
@@ -39,6 +42,9 @@ button {
 .cell-64 {
     width: 63px;
     height: 63px;
+}
+.cell-red {
+    background-color: red;
 }
 .cell-yellow {
     background-color: yellow;
