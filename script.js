@@ -17,17 +17,12 @@ function createCell (number) {
         grid.appendChild(document.createElement('div'));
         grid.lastChild.classList.add('cell');
         grid.lastChild.addEventListener('mouseenter', changeColor);
-        grid.lastChild.addEventListener('touchmove', logText);
         counter++;
     }
 }
 
-
 function changeColor() {
     this.classList.add('cell-red');
-}
-function logText() {
-    console.log("This is working!");
 }
 
 createCell(784);
