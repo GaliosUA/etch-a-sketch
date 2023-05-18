@@ -17,6 +17,7 @@ function createCell (number) {
         grid.appendChild(document.createElement('div'));
         grid.lastChild.classList.add('cell');
         grid.lastChild.addEventListener('mouseenter', changeColor);
+        grid.lastChild.addEventListener('touchmove', changeColor);
         counter++;
     }
 }
