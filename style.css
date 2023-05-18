@@ -5,6 +5,8 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
+
 body {
     background-image: url(./images/bg.jpg);
     background-size: cover;
@@ -55,3 +57,22 @@ button {
 .cell-green {
     background-color: green;
 }
+
+@media only screen and (max-width: 600px) {
+    .grid {
+        width: 288px;
+        height: 288px;
+    }
+    .cell {
+        width: 10px;
+        height: 10px;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mid, .big {
+        display: none;
+    }
+  }
